@@ -8,7 +8,11 @@ import pandas as pd
 from get_federal_court_proceedings import initiate_browser, get_all_proceedings
 from string import ascii_lowercase
 
-chromedriver_path = 'C:/Program Files (x86)/Google/Chrome/Application/Apps/Selenium/chromedriver.exe'
+#This master file is set up to run through all proceedings.
+#It does so by searching through all letters, returning results
+#and then removing duplicates.
+
+chromedriver_path = 'INSERT PATH HERE'
 
 driver = initiate_browser(chromedriver_path)
 
